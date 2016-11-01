@@ -1,0 +1,41 @@
+$primary: #006699;
+$bold: bold;
+$top-spacing: 25px;
+$gray-color: #eee;
+
+h2 {
+	font-weight: $bold;
+}
+
+ul.list-group li:hover {
+	cursor: pointer;
+	background: $gray-color;
+}
+
+.nwtask {
+	margin-top: $top-spacing;
+}
+
+.divider {
+	margin-top: $top-spacing;
+}
+
+.task-headers {
+	font-weight: $bold;
+	margin-bottom: 15px;
+}
+
+.align-task {
+	display: inline-block;
+	margin-top: 5px;
+}
+
+.no-complete-task {
+	margin-top: 10px;
+	font-style: italic;
+	text-align: center;
+}
+
+.clearfix {
+	clear: both;
+}
