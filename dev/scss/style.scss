@@ -2,6 +2,8 @@ $primary: #006699;
 $bold: bold;
 $top-spacing: 25px;
 $gray-color: #eee;
+$align-center: center;
+$size-15: 15px;
 
 h2 {
 	font-weight: $bold;
@@ -22,7 +24,7 @@ ul.list-group li:hover {
 
 .task-headers {
 	font-weight: $bold;
-	margin-bottom: 15px;
+	margin-bottom: $size-15;
 }
 
 .align-task {
@@ -33,7 +35,19 @@ ul.list-group li:hover {
 .no-complete-task {
 	margin-top: 10px;
 	font-style: italic;
-	text-align: center;
+	text-align: $align-center;
+}
+
+.modal-title {
+	text-align: $align-center;
+	font-size: $size-15;
+	font-weight: $bold;
+	color: #1E64A0;
+}
+
+.modal-form {
+	width: 100%;
+	margin-left: 50px;
 }
 
 .clearfix {

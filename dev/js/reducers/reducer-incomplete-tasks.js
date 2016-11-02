@@ -8,9 +8,13 @@ export default function(state=null, action) {
         break;
     }
 
-    return [
-        {taskName: 'Pick up milk', visibility: true},
-        {taskName: 'Grocery shopping', visibility: true},
-        {taskName: 'Hem Pants', visibility: true}
-    ]
+    if(!state){
+        return [
+            {taskName: 'Pick up milk', visibility: true},
+            {taskName: 'Grocery shopping', visibility: true},
+            {taskName: 'Hem Pants', visibility: true}
+        ]
+    } else {
+        return state;
+    }
 }
