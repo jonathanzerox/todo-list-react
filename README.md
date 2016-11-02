@@ -19,4 +19,3 @@ To view the application, visit your localhost at: [http://localhost:3000/](http:
 ## Links
 - [Skype - jonathanzerox](https://www.skype.com)
 - [LinkedIn](https://ug.linkedin.com/in/jonathanzerox)
-- [Facebook](https://www.facebook.com/jonathanzerox/)
