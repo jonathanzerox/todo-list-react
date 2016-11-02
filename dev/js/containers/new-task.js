@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import {Modal, Button} from 'react-bootstrap';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import {addNewTask} from '../actions/index';
 
 class NewTask extends Component {
 
@@ -13,6 +16,8 @@ class NewTask extends Component {
     onFormSubmit(event) {
         event.preventDefault();
 
+        this.props.addNewTask(this.state.taskName);
+        this.setState({taskName: ''});
     }
 
     render() {
@@ -44,4 +49,10 @@ class NewTask extends Component {
     }
 }
 
-export default NewTask;
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({
+        addNewTask: addNewTask
+    }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(NewTask);

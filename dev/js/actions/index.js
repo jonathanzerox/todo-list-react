@@ -1,6 +1,11 @@
-export const TASK_COMPLETED = 'TASK_COMPLETED';
-export const REMOVE_COMPLETED_TASK = 'REMOVE_COMPLETED_TASK';
-export const REMOVE_INCOMPLETE_TASK = 'REMOVE_INCOMPLETE_TASK';
+import {ADD_NEW_TASK, TASK_COMPLETED, REMOVE_COMPLETED_TASK, REMOVE_INCOMPLETE_TASK} from './action-types'
+
+export function addNewTask(task) {
+    return {
+        type: ADD_NEW_TASK,
+        payload: task
+    }
+}
 
 export function completedTask(task) {
     return {

@@ -1,4 +1,4 @@
-import {TASK_COMPLETED, REMOVE_COMPLETED_TASK} from '../actions/index';
+import {TASK_COMPLETED, REMOVE_COMPLETED_TASK} from '../actions/action-types';
 
 export default function(state=null, action) {
     switch (action.type) {
