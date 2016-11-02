@@ -1,4 +1,4 @@
-import {REMOVE_INCOMPLETE_TASK, ADD_NEW_TASK} from '../actions/action-types';
+import {REMOVE_INCOMPLETE_TASK, ADD_NEW_TASK, TASK_COMPLETED} from '../actions/action-types';
 
 export default function(state=null, action) {
 
@@ -9,6 +9,10 @@ export default function(state=null, action) {
 
         case ADD_NEW_TASK:
             return [{'taskName': action.payload}, ...state];
+        break;
+
+        case TASK_COMPLETED:
+            return state.filter(task => task.taskName !== action.payload.taskName);
         break;
     }
 

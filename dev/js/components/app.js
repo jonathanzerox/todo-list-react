@@ -19,31 +19,39 @@ class App extends Component {
 
     render() {
         return (
-            <Grid>
-                <Row className='show-grid'>
-                    <Col xs={6} md={6}>
-                        <h2>Todo List</h2>
-                    </Col>
+            <div>
+                <Grid>
+                    <Row className='show-grid'>
+                        <Col xs={6} md={6}>
+                            <h2>Todo List</h2>
+                        </Col>
 
-                    <Col xs={6} md={6}>
-                        <Button bsStyle='primary' className='pull-right nwtask' onClick={() => this.setState({showModal: true})}>New Task</Button>
-                    </Col>
-                </Row>
+                        <Col xs={6} md={6}>
+                            <Button bsStyle='primary' className='pull-right nwtask' onClick={() => this.setState({showModal: true})}>New Task</Button>
+                        </Col>
+                    </Row>
 
-                <Row className='divider'>
-                    <Col xs={6} md={6}>
-                        <IncompleteTasks />
-                    </Col>
+                    <Row className='divider'>
+                        <Col xs={6} md={6}>
+                            <IncompleteTasks />
+                        </Col>
 
-                    <Col xs={6} md={6}>
-                        <CompleteTasks />
-                    </Col>
-                </Row>
+                        <Col xs={6} md={6}>
+                            <CompleteTasks />
+                        </Col>
+                    </Row>
 
-                <Row>
-                    <NewTask showModal={this.state.showModal} closeModal={() => this.setState({showModal: false})} />
-                </Row>
-            </Grid>
+                    <Row>
+                        <NewTask showModal={this.state.showModal} closeModal={() => this.setState({showModal: false})} />
+                    </Row>
+                </Grid>
+
+                <footer className='footer'>
+                    <div className='container'>
+                        <p className='text-muted'>&copy; 2016 - Created by <a href='https://ug.linkedin.com/in/jonathanzerox'>Jonathan Zerox</a></p>
+                    </div>
+                </footer>
+            </div>
         )
     }
 }
