@@ -6,7 +6,7 @@ export default function(state=null, action) {
             if(!state) {
                 return [action.payload]
             } else {
-                return [...state, action.payload];
+                return [action.payload, ...state];
             }
         break;
 
