@@ -25,7 +25,7 @@ class CompleteTasks extends Component {
 
     render() {
 
-        if(!this.props.tasksCompleted) {
+        if(!this.props.tasksCompleted || !this.props.tasksCompleted.length) {
             return <div className='no-complete-task'>You must complete atleast 1 Task</div>
         }
 

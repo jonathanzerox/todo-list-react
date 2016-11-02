@@ -24,7 +24,12 @@ class IncompleteTasks extends Component {
         });
     }
 
-    render() {
+    render(){
+
+        if(!this.props.incompleteTasks || !this.props.incompleteTasks.length) {
+            return <div className='no-complete-task'>Create new task using button above</div>
+        }
+
         return (
             <div>
                 <h4 className='task-headers'>Incomplete Tasks</h4>

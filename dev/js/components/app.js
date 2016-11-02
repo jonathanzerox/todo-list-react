@@ -48,7 +48,7 @@ class App extends Component {
 
                 <footer className='footer'>
                     <div className='container'>
-                        <p className='text-muted'>&copy; 2016 - Created by <a href='https://ug.linkedin.com/in/jonathanzerox'>Jonathan Zerox</a></p>
+                        <p className='text-muted'>&copy; 2016 - Created by <a href='https://ug.linkedin.com/in/jonathanzerox' target='_blank'>Jonathan Zerox</a></p>
                     </div>
                 </footer>
             </div>
